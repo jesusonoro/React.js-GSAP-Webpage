@@ -1,0 +1,115 @@
+@import "../../style.scss";
+
+footer {
+  &.footer-wrapper {
+    border-top: 1px solid $light-3;
+    background-color: white;
+  }
+  .footer-top {
+    border-bottom: 1px solid $light-3;
+    padding-top: 70px;
+    padding-bottom: 83px;
+  }
+  .footer-middle {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer-bottom {
+    border-top: 1px solid $light-2;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .grid-footer-2-column---logo-and-buttons {
+    grid-column-gap: 40px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+  .footer-logo {
+    width: 100%;
+  }
+  .footer-logo-wrapper {
+    width: 100%;
+    max-width: 200px;
+    transform-style: preserve-3d;
+    margin-bottom: 24px;
+    transition-property: transform;
+  }
+
+  .grid-3-columns.footer-nav-menu {
+    grid-column-gap: 40px;
+    grid-row-gap: 50px;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+  }
+  @media screen and (max-width: 991px) {
+    .grid-footer-2-column---logo-and-buttons {
+      grid-row-gap: 40px;
+      grid-template-columns: 1fr;
+      .footer-logo-wrapper {
+        max-width: 200px;
+      }
+    }
+    .nav-menu-list-main-wrapper {
+      flex-wrap: wrap;
+    }
+    .grid-2-columns.footer-country-available-service {
+      grid-template-columns: auto;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .footer-top {
+      padding-top: 60px;
+      padding-bottom: 70px;
+    }
+    .footer-middle {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    .grid-footer-2-column---logo-and-buttons {
+      grid-row-gap: 30px;
+    }
+    .footer-logo-wrapper {
+      max-width: 166px;
+      margin-bottom: 20px;
+    }
+    .grid-3-columns.footer-nav-menu {
+      grid-template-columns: auto auto;
+      justify-content: stretch;
+    }
+    .grid-2-columns.footer-country-available-service {
+      grid-template-columns: auto auto;
+      grid-column-gap: 29px;
+      grid-row-gap: 13px;
+      grid-template-columns: auto auto;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    .footer-top {
+      padding-top: 50px;
+      padding-bottom: 60px;
+    }
+    .footer-middle {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    .footer-logo-wrapper {
+      max-width: 138px !important;
+      margin-bottom: 15px;
+    }
+    .grid-3-columns.footer-nav-menu {
+      grid-template-columns: auto;
+    }
+    .grid-2-columns.footer-country-available-service {
+      grid-template-columns: auto;
+    }
+  }
+  @media screen and (min-width: 1920px) {
+    .footer-top {
+      padding-top: 84px;
+      padding-bottom: 100px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@import "../../../../style.scss";
+
+.stats {
+  .stat {
+    &-title {
+      font-size: 33px;
+      font-weight: 700;
+      line-height: 1.179em;
+      color: #121212;
+      margin-bottom: 6px;
+    }
+    &-unit {
+      line-height: 1.111em;
+    }
+  }
+  &.grid-4-columns {
+    grid-template-columns: auto auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 479px) {
+    &.grid-4-columns {
+      grid-column-gap: 40px;
+      grid-row-gap: 40px;
+      grid-template-columns: auto auto;
+      justify-content: center;
+    }
+  }
+  @media screen and (min-width: 767px) {
+    .stat {
+      &-title {
+        font-size: 48px;
+      }
+    }
+    &.grid-4-columns {
+      grid-template-columns: auto auto auto auto;
+      grid-column-gap: 20px;
+      grid-template-columns: auto auto auto auto;
+      justify-content: space-between;
+    }
+  }
+  @media screen and (min-width: 991px) {
+    .stat {
+      &-title {
+        font-size: 56px;
+      }
+    }
+  }
+}

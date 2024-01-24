@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Metropolis";
+  src: url("../Assets/fonts/metropolis/Metropolis-Regular.otf")
+    format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("../Assets/fonts/metropolis/Metropolis-Medium.otf")
+    format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("../Assets/fonts/metropolis/Metropolis-SemiBold.otf")
+    format("opentype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("../Assets/fonts/metropolis/Metropolis-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Icons Custom Delivery X Template";
+  src: url("https://assets.website-files.com/61fd4a65725a5325e9bb25c2/62057d57a3e83b1ada339385_icons-custom-delivery-x-template.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Line Rounded Icons";
+  src: url("https://assets.website-files.com/61fd4a65725a5325e9bb25c2/61fd4a65725a532b4cbb261e_line-rounded-icons.woff2")
+      format("woff2"),
+    url("https://assets.website-files.com/61fd4a65725a5325e9bb25c2/61fd4a65725a534212bb263f_line-rounded-icons.eot")
+      format("embedded-opentype"),
+    url("https://assets.website-files.com/61fd4a65725a5325e9bb25c2/61fd4a65725a53c442bb263e_line-rounded-icons.woff")
+      format("woff"),
+    url("https://assets.website-files.com/61fd4a65725a5325e9bb25c2/61fd4a65725a53b8c0bb263d_line-rounded-icons.ttf")
+      format("truetype"),
+    url("https://assets.website-files.com/61fd4a65725a5325e9bb25c2/61fd4a65725a5376f3bb2628_line-rounded-icons.svg")
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.custom-icon-font {
+  font-family: Icons Custom Delivery X Template, sans-serif;
+  line-height: 1em;
+
+  &.button-left {
+    margin-right: 8px;
+
+    &.apple {
+      margin-left: 5px;
+      margin-right: 10px;
+      font-size: 24px;
+    }
+    &.android {
+      font-size: 17px;
+    }
+  }
+}
+
+.line-rounded-icon {
+  font-family: Line Rounded Icons, sans-serif;
+  &.dropdown-arrow {
+    margin-left: 4px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .line-rounded-icon.dropdown-arrow {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .line-rounded-icon.dropdown-arrow {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .line-rounded-icon.dropdown-arrow {
+    font-size: 22px;
+  }
+}

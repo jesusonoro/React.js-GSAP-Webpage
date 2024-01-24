@@ -1,0 +1,31 @@
+.hamburguerMenu {
+  padding: 0;
+  border: none;
+  background: none;
+
+  &-line {
+    width: 30px;
+    height: 4px;
+    border-radius: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+
+    &.top {
+        width: 30px;
+    }
+    &.bottom {
+        width: 20px;
+        margin-left: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .hamburguerMenu {
+    display: none;
+  }
+}

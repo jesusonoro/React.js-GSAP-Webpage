@@ -1,0 +1,113 @@
+@import "./colors.scss";
+
+.text-200 {
+  font-size: 16px;
+  line-height: 1.111em;
+  &.bold {
+    font-weight: 700;
+  }
+  &.menu-nav-link {
+    color: $light;
+    text-decoration: none;
+  }
+  &.menu-nav-link.special {
+    border-bottom: 3px solid $primary;
+    color: $primary;
+    padding-bottom: 6px;
+    font-weight: 700;
+    transition: border-color 0.3s, color 0.3s;
+    display: inline-block;
+  }
+}
+
+.text-300 {
+  font-size: 18px;
+  line-height: 1.1em;
+  &.bold {
+    font-weight: 700;
+  }
+  &.medium {
+    font-weight: 500;
+  }
+}
+
+.text-uppercase {
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: $secondary;
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.227em;
+}
+h3 {
+  color: $secondary;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.417em;
+}
+.heading-h4-size {
+  color: $secondary;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.273em;
+}
+.heading-h5-size {
+  color: $secondary;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.333em;
+}
+.display-4 {
+  color: $secondary;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.429em;
+}
+.link-text {
+  transition: color 0.3s;
+  display: inline-block;
+}
+.link-content {
+  color: $light;
+  text-decoration: none;
+  display: block;
+}
+
+@media screen and (min-width: 479px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .text-200 {
+    font-size: 18px;
+  }
+  .text-300 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .heading-h4-size {
+    font-size: 22px;
+  }
+  .display-4 {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 991px) {
+  h2 {
+    margin-bottom: 16px;
+    font-size: 44px;
+  }
+}

@@ -1,0 +1,81 @@
+@import "../../style.scss";
+
+#headlineSection {
+  padding-top: 60px;
+  padding-bottom: 73px;
+  background-color: $body-bg;
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about-title {
+    letter-spacing: 0.06em;
+    line-height: 1.111em;
+    margin-bottom: 22px;
+  }
+  .description {
+    max-width: 590px;
+    text-align: left;
+    &-text {
+      line-height: 1.667em;
+    }
+  }
+
+  .grid-2-columns {
+    grid-row-gap: 50px;
+    grid-template-columns: 1.25fr;
+  }
+
+  .image-absolute-01 {
+    position: absolute;
+    max-width: 40%;
+    bottom: 60px;
+    left: -10px;
+  }
+  .image-absolute-02 {
+    position: absolute;
+    max-width: 50%;
+    bottom: 25px;
+    right: -10px;
+  }
+
+  @media screen and (min-width: 767px) {
+    .grid-2-columns {
+      grid-row-gap: 60px;
+      grid-template-columns: 1.25fr;
+    }
+  }
+  @media screen and (min-width: 991px) {
+    #headlineSection {
+      padding-top: 70px !important;
+    }
+    .grid-2-columns {
+      grid-template-columns: 1.25fr 1fr;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .description {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 991px) {
+  #headlineSection {
+    padding-top: 70px !important;
+
+    .image-absolute-01 {
+      max-width: 45%;
+      bottom: 88px;
+      left: -18px;
+    }
+    .image-absolute-02 {
+      max-width: 55%;
+      bottom: 46px;
+      right: -52px;
+    }
+  }
+}
